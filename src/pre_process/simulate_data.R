@@ -31,8 +31,9 @@ mort_30 <- as.integer(days_til_death <= 30)
 mort_90 <- as.integer(days_til_death <= 90)
 mort_365 <- as.integer(days_til_death <= 365)
 
+# Bind into data frame
 data <- dplyr::tibble(
-   id, birth_date, dgn_date, mort_30, mort_90, mort_365, age, sex, race
+   id, birth_date, dgn_date, mort_30, mort_90, mort_365, sex, race
 )
 
 # Save data
